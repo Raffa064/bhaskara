@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bhaskara</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <main>
+        <div class="bhaskara">
+            x =
+            <div class="bhaskara-body">
+                <div class="top">
+                    <span id="previewB">b</span> ± √<span id="previewDelta">&Delta;</span>
+                </div>
+                <span class="line"></span>
+                <div class="bottom">
+                    2 • <span id="previewA">a</span>
+                </div>
+            </div>
+            <span id="result"></span>
+        </div>
+
+        <div>
+            <div class="inputs">
+                <input oninput="preview()" id="inputA" type="number" placeholder="a">
+                <input oninput="preview()" id="inputB" type="number" placeholder="b">
+                <input oninput="preview()" id="inputC" type="number" placeholder="c">
+            </div>
+        </div>
+    </main>
+    <div class="content">
+        <section>
+            <h2>O que é Bhaskara?</h2>
+            <p>Bhaskara, é uma fórmula usada para calcular a raíz de equações de 2° Grau.<br>
+            Ela possuí esse nome em homenagem ao matemático indiano <a href="https://pt.m.wikipedia.org/wiki/Bhaskara_II" target='_blank'>"Bhaskara Akaria"</a>.<br>
+            Mas, está famosa e temida fórmula não é chamada assim em todos os países, portanto a mesma pode ser chama de "fórmula da quadrática" ou "fórmula de resolução de equações do 2º Grau".</p>
+            <h2>Como funciona?</h2>
+            <p>A fórmula de Bhaskara possui esta forma:</p>
+            <img src="./imgs/bhaskara.png" alt="Fórmula de Bhaskara" />
+            <p>Sendo: <strong>a</strong>, <strong>b</strong>, e <strong>c</strong>, contantes tiradas da equação de 2º Grau, com base na <a href="https://www.google.com/amp/s/brasilescola.uol.com.br/amp/matematica/equacao-2-grau.htm" target="_blank">fórmula geral</a>, <strong>&Delta;</strong> (delta) o <a href="https://www.google.com/amp/s/www.infoescola.com/matematica/discriminante/amp/" target="_blank">descriminante</a>, e <strong>x</strong> a icognita a ser calculada.<br>
+            A fórmula de Bhakara pode resultar em 1, 2, ou nenhum resultado, de acordo com o <strong>descriminante</strong>:</p>
+            <ul>
+                <li>&Delta; &lt; 0, Quando o delta for negativo, significa que a <strong>raiz da equação</strong> não existe.</li>
+                <li>&Delta; = 0, Quando o delta for igual a zero, significa que so existe uma <strong>raiz da equação</strong>, ou mesmo, duas raizes iguais.</li>
+                <li>&Delta; > 0, Quando o delta for maior do que zero, significa que so existem 2 <strong>raizes da equação</strong>.</li>
+            </ul>
+            <p>Após calcular o descriminante, você deve calcular o resto da fórmula que é uma tarefa relativamente fácil.</p>
+            <p>Uma coisa que pode gerar duvidas é o "operador" <strong>&plusmn;</strong> que pode der entendido erroneamente como uma aproximação, quando na verdade, signifíca que os mesmos calculos devem ser feitos duas veses, com adição, e subtração no lugar do <strong>&plusmn;</strong>.</p>
+            <p>Para mais informações, você pode acessar os links abaixo:</p>
+            <ul>
+                <li><a href="https://matematicario.com.br/blog/equacao-do-2o-grau/" target="_blank">Tudo sobre equação de 2º Grau (Matemática Rio)</a></li>
+                <li><a href="https://www.google.com/amp/s/www.todamateria.com.br/equacao-do-segundo-grau/amp/" target="_blank">Equação de 2º Grau (Toda Materia)</a></li>
+                <li><a href="https://matematicabasica.net/equacao-do-2-grau-segundo-grau/" target="_blank">Equação de 2º Grau (Matemática básica)</a></li>
+                <li><a href="https://www.google.com/amp/s/m.brasilescola.uol.com.br/amp/o-que-e/matematica/o-que-e-discriminante.htm" target="_blank">O que é descriminante (Brasil Escola)</a></li>
+                <li><a href="https://www.google.com/amp/s/m.brasilescola.uol.com.br/amp/matematica/formula-bhaskara.htm" target="_blank">Fórmula de Bhaskara (Brasil Escola)</a></li>
+            </ul>
+        </section>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

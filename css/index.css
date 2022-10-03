@@ -1,0 +1,140 @@
+:root {
+    --background-color: #222831;
+    --light-background-color: #EDEDED;
+    --light-block-color: #dcdcdc;
+    --font-color: #AAAAAA;
+    --inverse-font-color: #414F60;
+    --error-color: #F05454;
+    --hightlight-color: #0088FF;
+    --focus-hightlight-color: #8FBFFF;
+    --placeholder-color: #808080;
+    --title-color: #30475E;
+    --link-color: #2879BF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    transition: 0.2s;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--font-color);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bhaskara {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bhaskara .bhaskara-body {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 7px;
+}
+
+.bhaskara .line {
+    display: block;
+    width: 100%;
+    background: var(--font-color);
+    border: 1px solid var(--background-color);
+}
+
+.inputs {
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    background: transparent;
+    color: var(--font-color);
+    border: 1px solid var(--hightlight-color);
+    border-radius: 10px;
+    text-align: center;
+}
+
+input:focus {
+    border: 2px solid var(--focus-hightlight-color);
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.error {
+    color: var(--error-color);
+    font-weight: bold;
+}
+
+.content {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 10px 10px 0px 10px;
+    transition: 0.01s;
+}
+
+section {
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 4px;
+    color: black;
+}
+
+section h2 {
+    margin-top: 10px;
+    color: var(--title-color);
+    font-weight: normal;
+}
+
+section p {
+    text-indent: 10px;
+    color: var(--inverse-font-color);
+}
+
+section a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+section img {
+    display: block;
+    --size: 5rem;
+    width: var(--size);
+    height: var(--size);
+    margin: auto;
+}
+
+section ul {
+    list-style: none;
+    padding: 10px;
+    margin: 3px;
+    background: var(--light-block-color);
+    border-radius: 6px;
+}
